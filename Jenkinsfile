@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        DOCKER_IMAGE = "abhinavjindal26/weather-dashboard"
+        DOCKER_IMAGE = "jabhii26/weather-dashboard"
         DOCKER_TAG = "${BUILD_NUMBER}"
         CONTAINER_NAME = "weather-app"
     }
