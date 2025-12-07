@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkySense Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="logo">⚡SkySense</div>
+
+      <div class="menu">
+        <span class="home-btn">🏠</span>
+        <span class="stats-btn">📊</span>
+        <span class="gps-btn">📍</span>
+        <span class="week-btn">📅</span>
+        <span class="settings-btn">⚙️</span>
+      </div>
+
+      <div class="toggle">🌙</div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+      <!-- SEARCH BAR -->
+      <div class="top-bar">
+        <input type="text" id="searchCity" placeholder="Search City..." />
+        <div class="user">👤 User</div>
+      </div>
+
+      <!-- MAIN WEATHER CARD -->
+      <section class="weather-main" id="weatherMain">
+        <div class="sun-glow" id="sunGlow"></div>
+
+        <div class="left">
+          <h1 id="temp">--°C</h1>
+          <p id="condition">Loading...</p>
+          <p id="date"></p>
+          <p id="city" class="city-name">City</p>
+        </div>
+
+        <img id="main-icon" class="big-icon" src="" alt="" />
+      </section>
+
+      <!-- HIGHLIGHTS -->
+      <section class="highlights">
+        <div class="box">
+          <h3>UV Index</h3>
+          <p id="uv">--</p>
+        </div>
+        <div class="box">
+          <h3>Humidity</h3>
+          <p id="humidity">--%</p>
+        </div>
+        <div class="box">
+          <h3>Wind Speed</h3>
+          <p id="wind">-- km/h</p>
+        </div>
+        <div class="box">
+          <h3>Chance of Rain</h3>
+          <p id="rain">--%</p>
+        </div>
+      </section>
+
+      <!-- HOURLY -->
+      <section class="hourly">
+        <h2>Today / Hourly</h2>
+        <div id="hourly-container" class="hourly-cards"></div>
+      </section>
+
+      <!-- WEEK FORECAST -->
+      <section class="week">
+        <h2>Next 5 Days Forecast</h2>
+        <div id="week-container" class="week-cards"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
