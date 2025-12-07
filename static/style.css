@@ -17,7 +17,7 @@ body {
 
 /* SIDEBAR */
 .sidebar {
-  width: 85px;
+  width: 86px;
   height: 100vh;
   background: rgba(15, 22, 43, 0.7);
   backdrop-filter: blur(20px);
