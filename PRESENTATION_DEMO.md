@@ -3,6 +3,7 @@
 ## 📋 Demo Flow for Ma'am
 
 ### Step 1: Show Current Project Status
+
 ```bash
 # Show project is already on GitHub
 git remote -v
@@ -10,13 +11,16 @@ git status
 ```
 
 ### Step 2: Make a Live Change
+
 **Option A - Update README (Recommended):**
+
 ```bash
 # Open README.md
 notepad README.md
 ```
 
 **Change to make:**
+
 ```markdown
 # ⚡ SkySense Weather Dashboard - Live Demo v2.0
 
@@ -25,7 +29,7 @@ Modern weather dashboard with real-time forecasts, built with FastAPI and deploy
 ## 🌟 Features
 
 - 🌤️ Real-time weather data
-- 📍 GPS location support  
+- 📍 GPS location support
 - 🔍 City search functionality
 - 📊 Hourly & 5-day forecasts
 - 🎨 Modern glassmorphism UI
@@ -34,17 +38,20 @@ Modern weather dashboard with real-time forecasts, built with FastAPI and deploy
 ```
 
 **Option B - Update App Title:**
+
 ```bash
 # Open index.html
 notepad static\index.html
 ```
 
 **Change line 6:**
+
 ```html
-<title>SkySense Weather - Live Demo</title>
+<title>SkySense Weather - Live weather Demo</title>
 ```
 
 ### Step 3: Git Commands (Live Demo)
+
 ```bash
 # Check what changed
 git status
@@ -60,12 +67,14 @@ git push origin main
 ```
 
 ### Step 4: Show Jenkins Auto-Build
+
 1. Open Jenkins: http://localhost:8081
 2. Show pipeline automatically triggered
 3. Monitor build progress
 4. Show successful deployment
 
 ### Step 5: Show Live Changes
+
 1. Open app: http://localhost:8080
 2. Show updated title/content
 3. Demonstrate CI/CD working
@@ -75,18 +84,23 @@ git push origin main
 ## 🎤 What to Say During Demo
 
 ### Opening:
+
 "Ma'am, mera project already GitHub pe deployed hai. Main aapko live CI/CD pipeline demonstrate karta hoon."
 
 ### During Change:
+
 "Main ek small change kar raha hoon README file mein to show live deployment."
 
 ### During Git Commands:
+
 "Ye standard Git workflow hai - add, commit, push. Jaise hi main push karunga, Jenkins automatically build start kar dega."
 
 ### During Jenkins:
+
 "Dekho ma'am, Jenkins ne automatically detect kiya ki code change hua hai. Ye build kar raha hai, Docker image bana raha hai, aur deploy kar raha hai."
 
 ### Final:
+
 "Aur dekho, changes live ho gaye hain. Ye complete CI/CD pipeline hai - code change se deployment tak fully automated."
 
 ---
@@ -118,6 +132,7 @@ start http://localhost:8080
 ## 🎯 Demo Backup Plan
 
 **If Jenkins not working:**
+
 ```bash
 # Manual Docker demo
 docker build -t weather-demo .
@@ -126,6 +141,7 @@ start http://localhost:8080
 ```
 
 **If Git issues:**
+
 ```bash
 # Check remote
 git remote -v
