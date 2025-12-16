@@ -1,6 +1,8 @@
-# ⚡ SkySense Weather Dashboard
+# ⚡ SkySense Weather Dashboard - Ready for Demo
 
 Modern weather dashboard with real-time forecasts, built with FastAPI and deployed using DevOps practices.
+
+> 🚀 **Live CI/CD Pipeline Demo Ready!**
 
 ## 🌟 Features
 
